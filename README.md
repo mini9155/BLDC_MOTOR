@@ -6,14 +6,18 @@ Control BLDC motor.
 
 ## BLDC AC 모터를 제어하기 위한 프로젝트
 
-- 방식 : Modbus RTU
-- 사용 언어 : Python
+- 방식
+  - Modbus RTU
+- 사용 언어
+  - Python
 - 사용모듈
   - ver 1 : pymodbus, PySide6, sys
   - ver 2 : pymodbus, PySide6, logging, time, sys
   - ver 3 : Serial, sturct, crcmod, sys
-- 제작 기간 : 1달
-- 통신 방식 : RS-485
+- 제작 기간
+    - 1달
+- 통신 방식
+  - RS-485
 
 
 1. 모드버스 RTU
