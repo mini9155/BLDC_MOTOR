@@ -26,8 +26,8 @@ Control BLDC motor.
   - ex) 0x1 0x6 0x78 0x0 0x1 0xc8 0x13 <- 이런식으로 구성이 된다
   - 끝에 2자리인 CRC16 (0xc8, 0x13)은 계산식이 따로 있으나 pymodbus 혹 crcmod의 함수를 빌려쓰면 편하다
   - 사용한 함수 코드
-    04 Read Input Registers 3x (30001-39999) - 상태를 읽을 수 있다
-    06 Write Single Register 0x (40001-39999) - 명령을 내릴 수 있다.
+    - 04 Read Input Registers 3x (30001-39999) - 상태를 읽을 수 있다
+    - 06 Write Single Register 0x (40001-39999) - 명령을 내릴 수 있다.
   - 시리얼로 데이터를 받았을 떄 이해하기 힘든 경우 뒤에 crc16 2개 뺴고, 앞에 슬레이브 아이디, 함수 코드를 제외하고 읽어보면 도움이 된다
 
 2. 버전 및 방식을 바꾼 이유
